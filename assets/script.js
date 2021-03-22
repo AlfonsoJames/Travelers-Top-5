@@ -72,7 +72,7 @@ $("#searchBtn").on("click", function(event) {
 
 // gets appropriate info from yelp APi
 function getCityInfo(location) {
-    var queryurl = "https://api.yelp.com/v3/businesses/search?term=" + selectedOption + "&location=" + location;
+    var queryurl = "https://corsproxy1984.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + selectedOption + "&location=" + location;
     
     $.ajax({
         url: queryurl,
